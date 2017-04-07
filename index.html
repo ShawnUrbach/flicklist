@@ -9,6 +9,7 @@
   <!--
   TODO add bootstrap js script
   -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css"/>
@@ -26,7 +27,7 @@
 
   <div class="main-content">
 
-    <section id="section-watchlist" class="col-md-5">
+    <section id="section-watchlist">
       <header>
         <h2>My Watchlist</h2>
         <hr/>
@@ -35,31 +36,82 @@
       <ul class="list-inline"></ul>
     </section>
 
-    <section id="section-browse" class="col-md-7">
+    <section id="section-browse" class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="well">
+				<div class="row">
+					<div class="col-sm-7" id="browse-info">
+					<h4>Twilight</h4>
+					<p>This is a fake description</p>
+					</div>
+					<div class="col-sm-5">
+					
+					
+					
+					
+					
+					<img src = "https://pbs.twimg.com/profile_images/378800000576832113/3e69602eab961fd19b89cc65ea9bd2e8.jpeg">
+					<button id="add-to-watchlist" class="btn btn-primary">Add to Watchlist</button>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
 
-      <!-- TODO
-      Rearrange the layout of this section using the Bootstrap grid system to match the specification 
-      -->
+			  <!-- TODO
+			  Rearrange the layout of this section using the Bootstrap grid system to match the specification 
+			  -->
 
-      <header>
-        <h2>Browse Movies</h2>
-      </header>
-      <form id="form-search">
-        <div class="input-group">
-          <input type="text" class="form-control" name="query"/>
-          <span class="input-group-btn">
-            <input type="submit" class="btn btn-primary" value="Search By Topic"/>
-          </span>
-        </div>
-      </form>
+			  <header>
+				<h2>Browse Movies</h2>
+			  </header>
+			  <form id="form-search">
+				<div class="input-group">
+				  <input type="text" class="form-control" name="query"/>
+				  <span class="input-group-btn">
+					<input type="submit" class="btn btn-primary" value="Search By Topic"/>
+				  </span>
+				</div>
+			  </form>
+		
+			  <!-- 
+			  TODO
+			  implement a carousel inside this section
+			  You can incorporate this <ul> as the .carousel-inner 
+			  -->
+			  
+ 
+  <div id="browse-carousel" class="carousel slide" data-ride="carousel">
 
-      <!-- 
-      TODO
-      implement a carousel inside this section
-      You can incorporate this <ul> as the .carousel-inner 
-      -->
-      <ul class="list-group"></ul>
+    <!-- Wrapper for slides -->
+    <ul class="carousel-inner" role="listbox">
+      <li class="item active">
+        <img src="https://resizing.flixster.com/Er5JQ3qtmB2ABy6ShbR6DqiUfTU=/206x305/v1.bTsxMjI2MTcyNjtqOzE3Mjg2OzEyMDA7NjIxOzkyMQ">
+      </li>
 
+      <li class="item">
+        <img src="https://resizing.flixster.com/P8AinsdI0XeV-AsyhgkcihWdhWs=/206x305/v1.bTsxMjMwNDQ4NDtqOzE3Mjg3OzEyMDA7NjI2OzkyNA">
+      </li>
+
+      <li class="item">
+        <img src="https://resizing.flixster.com/vQYnuRN4eFFqsj2o9L9Eooa3J-M=/206x305/v1.bTsxMjM0OTcyMjtqOzE3Mjg3OzEyMDA7MjAyNjszMDAx">
+      </li>
+
+    </ul>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#browse-carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#browse-carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+
+			  
+			</div>
+		</div>
     </section>
 
   </div>
